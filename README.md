@@ -17,7 +17,7 @@
 We have access to a dataset of 2111 individuals that records their obesity Level along with 17 attributes related with eating habits, physical condition, and demographics.
 
 ## Business Objective
-World Health Organization is interested in understanding key features associated with obsesity levels in three different locations - Mexico, Peru and Colombia. Using the provied dataset, we want to understand the main factors that contribute to obesity levels. Once the top factors are identified, WHO can make a decision about focusing educational initiatives and allocating financial resources towards the identified factors in order to achieve the most improvement in health outcomes.
+World Health Organization (WHO) is interested in understanding key features associated with obsesity levels in three different locations - Mexico, Peru and Colombia. Using the provied dataset, we want to understand the main factors that contribute to obesity levels. Once the top factors are identified, WHO can make a decision about focusing educational initiatives and allocating financial resources towards the identified factors in order to achieve the most improvement in health outcomes.
 
 Therefore, the key deliverable for us is the list of top 3 factors that are most strongly correlated with obesity levels.
 
@@ -44,9 +44,23 @@ The data consist of 2111 individuals with 17 attributes recorded for each indivi
  | MTRANS | Categorical | Which transportation do you usually use?| Lifestyle |
  | NObeyesdad | Categorical | Obesity level | Target |
  
-## Potential risks and uncertainities
+## Potential risks and uncertainty
+- Some important factors such as genetic pre-disposition to obesity, presence of diabetes, etc. are missing from the data and will therefore be ignored.
+- While the models will tell us the most important features that predict obesity, the relationships are not necessarily causal, which means that improving that factor may not reduce obesity levels.
 
 # Methodology
+The overall plan to tackle the project is as follows:
+
+1. **Exploratory Data Analysis (EDA)**: understand each feature, explore relationships between features, understand class imbalances, analyze any missing data, and to generate ideas for feature engineering and data-pre-processing.
+2. **Unsupervised analysis**: perform unsupervised clustering of data and analyze the key features contributing to each cluster.
+3. **Develop and evaluate predictive ML models**:
+    - Create a baseline logistic regression model
+    - Evaluate the performance of the model using metrics such as precision, recall, and confusion matrices.
+    - Finetune baseline model and try other algorithms such as Random Forest Classifier and XGBoost classifier
+    - Compare performance of the more complex models with the baseline model.
+4. **Choose the best model**: Compare performance of different models to choose the best one, calculate feature importance of input features
+5. Make recommendations and suggestions for the executive team at WHO.
+
 
 ## Technical stack
 - Add technical details (which packages are needed for what)
@@ -69,3 +83,4 @@ The data consist of 2111 individuals with 17 attributes recorded for each indivi
 
 # References
 - [Dataset](https://archive.ics.uci.edu/dataset/544/estimation+of+obesity+levels+based+on+eating+habits+and+physical+condition) has been sourced from UC Irvine Machine Learning Repository
+- [Publication](https://doi.org/10.1016/j.dib.2019.104344) linked to the dataset
