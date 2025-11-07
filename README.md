@@ -47,6 +47,11 @@ The data consist of 2111 individuals with 17 attributes recorded for each indivi
 ## Potential risks and uncertainty
 - Some important factors such as genetic pre-disposition to obesity, presence of diabetes, etc. are missing from the data and will therefore be ignored.
 - While the models will tell us the most important features that predict obesity, the relationships are not necessarily causal, which means that improving that factor may not reduce obesity levels.
+- BMI (weight/height^2) has been used to define the target categories, and both weight and height have also been included in the data as predictors. From our initial analysis, we see that weight is the most important predictor for each category as expected. Therefore, it's unclear if weight and height should be included as predictors.
+- Any insights we draw from these data will be geographically limited to Latin America and not transferable to other geographies.
+- Only 23% data are directly collected from people, the rest have been synthetically generated. Synthetic data may not be representative of the real population.
+- We have 7 categories in our target variable. Some of these may be hard to distinguish.
+- Some of the variables in the data are self-reported and may contain biases inherent in self-reported data. For example, a variable like FAVC (Do you eat high caloric food frequently?) is difficult to self-assess and report accurately.
 
 # Methodology
 The overall plan to tackle the project is as follows:
@@ -79,14 +84,18 @@ The overall plan to tackle the project is as follows:
 * **README:** This file!
 * **.gitignore:** Files to exclude from this folder (e.g., large data files).
 
-
 ## Technical stack
 - scikit-learn library to fit and evaluate supervised and unsupervised ML models.
 - pandas and numpy: to load and explore the dataset and basic data manipulations
 - matplotlib: to create visualizations
 
 ## Task assignment
-TO DO 
+- I Made Eka Dwipayana: Starter code for exploratory data analysis and models, XGBoost experiments and model (including SHAP analysis)
+- Olalekan Kadri: Baseline logistic regression and experiments (including SHAP analysis)
+- Rameez Rosul: Unsupervised data analysis 
+- Shefali Lathwal: Exploratory data analysis
+- Suni Bek: Exploratory data analysis
+- Vinushiya Shanmugathasan: Experiment with Random Forest model (including SHAP analysis)
 
 ## Exploratory data analysis
 
@@ -100,7 +109,7 @@ TO DO
 
 ### Final model
 
-# Conclusion and Future Directions
+# Conclusions and Future Directions
 
 # Team Videos
 
