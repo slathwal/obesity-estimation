@@ -28,15 +28,15 @@ The data consist of 2111 individuals with 17 attributes recorded for each indivi
  | --- | --- | --- | --- |
  | Gender | Categorical | - | Demographic |
  | Age | Continuous | - | Demographic |
- | Height | Continuous | - | Demographic |
- | Weight | Continuous | - | Demographic |
+ | Height | Continuous | - | Other |
+ | Weight | Continuous | - | Other |
  | family_history_with_overweight | Categorical | Has a family member suffered or suffers from overweight? | Family History |
  | FAVC | Categorical | Do you eat high caloric food frequently? | Eating Habits |
  | FCVC | Integer | Do you usually eat vegetables in your meals? | Eating Habits |
  | NCP | Continuous | How many main meals do you have daily? | Eating Habits |
  | CAEC | Categorical | Do you eat any food between meals? | Eating Habits |
  | SMOKE | Categorical | Do you smoke? | Lifestyle |
- | CH2O | CContinuous | How much water do you drink daily? | Eating Habits |
+ | CH2O | Continuous | How much water do you drink daily? | Eating Habits |
  | SCC | Categorical | Do you monitor the calories you eat daily? | Eating Habits |
  | FAF | Continuous | How often do you have physical activity? | Lifestyle |
  | TUE | Integer | How much time do you use technological devices such as cell phone, videogames, television, computer and others? | Lifestyle |
@@ -61,9 +61,32 @@ The overall plan to tackle the project is as follows:
 4. **Choose the best model**: Compare performance of different models to choose the best one, calculate feature importance of input features
 5. Make recommendations and suggestions for the executive team at WHO.
 
+## Git structure
+
+```
+├── data
+├──── raw
+├── experiments
+├── models
+├── images
+├── README.md
+└── .gitignore
+```
+* **Data:** Contains the raw data. 
+* **Experiments:** A folder containing ipython notebook for data exploration and experiments.
+* **Models:** A folder containing the final trained model
+* **Images:** Contain all images used in the README.md file
+* **README:** This file!
+* **.gitignore:** Files to exclude from this folder (e.g., large data files).
+
 
 ## Technical stack
-- Add technical details (which packages are needed for what)
+- scikit-learn library to fit and evaluate supervised and unsupervised ML models.
+- pandas and numpy: to load and explore the dataset and basic data manipulations
+- matplotlib: to create visualizations
+
+## Task assignment
+TO DO 
 
 ## Exploratory data analysis
 
@@ -73,7 +96,7 @@ The overall plan to tackle the project is as follows:
 
 #### Model 2
 
-### Model 3:
+### Model 3
 
 ### Final model
 
