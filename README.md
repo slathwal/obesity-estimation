@@ -3,7 +3,7 @@
 
 ## Members
 
-- [I Made Eka Dwipayana]()
+- [Eka Dwipayana]()
 - [Olalekan Kadri]()
 - [Rameez Rosul]()
 - [Shefali Lathwal]()
@@ -90,7 +90,7 @@ The overall plan to tackle the project is as follows:
 - matplotlib: to create visualizations
 
 ## Task assignment
-- I Made Eka Dwipayana: Starter code for exploratory data analysis and models, XGBoost experiments and model (including SHAP analysis)
+- Eka Dwipayana: Starter code for exploratory data analysis and models, XGBoost experiments and model (including SHAP analysis)
 - Olalekan Kadri: Baseline logistic regression and experiments (including SHAP analysis)
 - Rameez Rosul: Unsupervised data analysis 
 - Shefali Lathwal: Exploratory data analysis
