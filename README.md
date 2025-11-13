@@ -102,6 +102,18 @@ The overall plan to tackle the project is as follows:
 ## Model Development and Evaluation
 
 ### Model 1
+- The experiment was conducted by splitting the dataset into training and test dataset, stratified. Logistic regression
+model was used. With accuracy of 88%, the following feature importance were found:
+1. Top 3 important features for Insufficient_Weight are : Weight, Height and Age
+2. Top 3 important features for Normal_Weight are : Weight, Height and CAEC_sometimes
+3. Top 3 important features for Obesity_Type_I are : Weight, Height and FCVC
+4. Top 3 important features for Obesity_Type_II are : Weight, Height and Gender_Male
+5. Top 3 important features for Obesity_Type_III are : Weight, FCVC and Gender_Male
+6. Top 3 important features for Overweight_Level_I are : Weight, Height and FCVC
+7. Top 3 important features for Overweight_Level_II are : Gender_Male, Age and FCVC
+
+Note that weight or height is common important feaures to all target classes except overweight_Level_II. This is an 
+insight that needs to further checked with other models to see if the same pattern is repeated.
 
 #### Model 2
 
