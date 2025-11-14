@@ -178,6 +178,10 @@ insight that needs to further checked with other models to see if the same patte
 
 ![alt text](images/XGBoost_train_test_loss.png)
 
+- The result of model metrics is detailed with confussion matrix as follows:
+
+ ![alt text](images/XGBoost_confusion_matrix.png)
+  
 - The SHAP feature importance showed:
 1. Top 3 important features for Insufficient_Weight are : Weight, Height and Age
 2. Top 3 important features for Normal_Weight are : Weight, Height and CH2O
