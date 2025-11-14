@@ -227,7 +227,7 @@ The plot of SHAP feature importance for Obesity Type III class is presented as f
 ![alt text](images/PyTorch_top15_class4.png)
 
 ### Models Summary
-The resume of all 4 models are detailed as follows:
+The resume of all 4 models performance are detailed as follows:
 
 <div align="center">
  
