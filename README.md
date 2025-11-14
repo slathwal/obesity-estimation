@@ -143,7 +143,10 @@ model was used. With accuracy of 88%, the following feature importance were foun
 Note that weight or height is common important feaures to all target classes except overweight_Level_II. This is an 
 insight that needs to further checked with other models to see if the same pattern is repeated.
 
-#### Model 2
+### Model 2
+- The second experiment involved training a random forest model, where the accuracy was about 93%.
+- The top three features that highly impacted the model are the following:
+    - Weight, FCVC and age
 
 ### Model 3
 
