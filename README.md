@@ -100,7 +100,7 @@ The overall plan to tackle the project is as follows:
 ## Exploratory data analysis
 
 ### Dataset overview
-![number of participants in each target category](./images/eda/eda_Weight_dsitribution_with_weight_class.png)
+![number of participants in each target category](images/eda/eda_weight_class_distribution_horizontal_bar.png)
 - The dataset contains 1 target variable, NObeyesdad, and 16 feature variables
 - There are a total of 2111 data points.
 - 8 features are of type object, and 8 features are of type float
