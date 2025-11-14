@@ -178,14 +178,15 @@ insight that needs to further checked with other models to see if the same patte
 
 ![alt text](images/XGBoost_train_test_loss.png)
 
+<p align="center">
+  <img src="images/XGBoost_train_test_loss.png" width="750">
+</p>
+
 - The result of model metrics is detailed with confussion matrix as follows:
 
 <p align="center">
   <img src="images/XGBoost_confusion_matrix.png" width="750">
 </p>
-
-
- ![alt text](images/XGBoost_confusion_matrix.png)
   
 - The SHAP feature importance showed:
 1. Top 3 important features for Insufficient_Weight are : Weight, Height and Age
@@ -199,6 +200,10 @@ insight that needs to further checked with other models to see if the same patte
 The plot of SHAP feature importance for Obesity Type III class is presented as follows:
 
 ![alt text](images/XGBoost_shap_bar_class_4.png)
+
+<p align="center">
+  <img src="images/XGBoost_shap_bar_class_4.png" width="750">
+</p>
 
 ### Model 4: Neural Network with PyTorch
 - The third model carried out Nural Network with PyTorch, where the accuracy was around 95.27% with no sign of overfitting (by tightening the regularization with dropout rate optimization). The SHAP feature importance showed:
