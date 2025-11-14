@@ -100,12 +100,12 @@ The overall plan to tackle the project is as follows:
 ## Exploratory data analysis
 
 ### Dataset overview
-![number of participants in each target category](images/eda/eda_weight_class_distribution_horizontal_bar.png)
 - The dataset contains 1 target variable, NObeyesdad, and 16 feature variables
 - There are a total of 2111 data points.
 - 8 features are of type object, and 8 features are of type float
 - There are no missing values in any variable
-
+- The target category consists of seven different weight classes. The classes and number of participants in each class are shown below.
+![number of participants in each target category](images/eda/eda_weight_class_distribution_horizontal_bar.png)
 
 ### Key observations
 - People with a family history of obesity are much more likely to be overweight or obese, especially in the higher obesity classes. Those without a family history are mostly normal weight or underweight.
