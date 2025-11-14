@@ -173,23 +173,23 @@ insight that needs to further checked with other models to see if the same patte
     - Weight, FCVC and age
 
 ### Model 3: XGBoost
-- The third model performed XGBoost, where the accuracy was around 94.84% with no sign of overfitting (by tightening the regularization). The SHAP feature importance showed:
+- The third model performed XGBoost, where the accuracy was around 95.27% with no sign of overfitting (by tightening the regularization). The SHAP feature importance showed:
 1. Top 3 important features for Insufficient_Weight are : Weight, Height and Age
 2. Top 3 important features for Normal_Weight are : Weight, Height and CH2O
 3. Top 3 important features for Obesity_Type_I are : Weight, Height and FCVC
-4. Top 3 important features for Obesity_Type_II are : Weight, Gender_Female and Age
+4. Top 3 important features for Obesity_Type_II are : Weight, Height and CH2O
 5. Top 3 important features for Obesity_Type_III are : Weight, Gender_Female and FCVC
 6. Top 3 important features for Overweight_Level_I are : Weight, Height and FCVC
-7. Top 3 important features for Overweight_Level_II are : Weight, Gender_Female, FCVC
+7. Top 3 important features for Overweight_Level_II are : Weight, Age, Height
 
 ### Model 4: Neural Network with PyTorch
 - The third model carried out Nural Network with PyTorch, where the accuracy was around 95.27% with no sign of overfitting (by tightening the regularization with dropout rate optimization). The SHAP feature importance showed:
-1. Top 3 important features for Insufficient_Weight are : Weight, Height and CAEC_Sometimes
+1. Top 3 important features for Insufficient_Weight are : Weight, Height and Family_History_with_Overweight_Yes
 2. Top 3 important features for Normal_Weight are : Weight, Height and CAEC_Sometimes
-3. Top 3 important features for Obesity_Type_I are : Weight, Height and FAVC_Yes
+3. Top 3 important features for Obesity_Type_I are : Weight, Height and CAEC_Sometimes
 4. Top 3 important features for Obesity_Type_II are : Weight, Height and Age
-5. Top 3 important features for Obesity_Type_III are : Weight, Height and Gender_Female
-6. Top 3 important features for Overweight_Level_I are : Weight, Height and Age
+5. Top 3 important features for Obesity_Type_III are : Weight, Height and Gender_Male
+6. Top 3 important features for Overweight_Level_I are : Weight, Height and Family_History_with_Overweight_Yes
 7. Top 3 important features for Overweight_Level_II are : Weight, Age and Family_History_with_Overweight_Yes
 
 ### Models Summary
