@@ -176,8 +176,6 @@ insight that needs to further checked with other models to see if the same patte
 - The third model performed XGBoost, where the accuracy was around 95.27% with no sign of overfitting (by tightening the regularization).
 - The process of classification was import all the libraries required, read dataset, mapp the target, do train tes split, create pipeline that scaling the numerical features and do one hot encoding for categorical features, do hyperparameter tunning to find the best parameters value based on model's performance, train the final model with the best parameters value and calculate all the metrics. The train versus testing loss is shown in the following image, where the decrease of train loss is followed by the decrease of testing loss. It means there is no sign of overfitting.
 
-![alt text](images/XGBoost_train_test_loss.png)
-
 <p align="center">
   <img src="images/XGBoost_train_test_loss.png" width="750">
 </p>
@@ -201,12 +199,21 @@ The plot of SHAP feature importance for Obesity Type III class is presented as f
 
 ![alt text](images/XGBoost_shap_bar_class_4.png)
 
+### Model 4: Neural Network with PyTorch
+- The third model carried out Nural Network with PyTorch, where the accuracy was around 95.27% with no sign of overfitting (by tightening the regularization with dropout rate optimization).
+- The process of classification was import all the libraries required, read dataset, mapp the target, do train tes split, create pipeline that scaling the numerical features and do one hot encoding for categorical features, create PyTorch dataloader, create neaural network architecture, assign optuna for hyperparameter tunning to find the best parameters value based on model's performance, train the final model with the best parameters value and calculate all the metrics. The calculation of all metrics through all classes is demonstrated bellow:
+
 <p align="center">
-  <img src="images/XGBoost_shap_bar_class_4.png" width="750">
+  <img src="images/PyTorch_classification_report.png" width="750">
 </p>
 
-### Model 4: Neural Network with PyTorch
-- The third model carried out Nural Network with PyTorch, where the accuracy was around 95.27% with no sign of overfitting (by tightening the regularization with dropout rate optimization). The SHAP feature importance showed:
+- The result of model metrics is detailed with confussion matrix as follows:
+
+<p align="center">
+  <img src="images/PyTorch_Confusion matrix.png" width="750">
+</p>
+  
+- The SHAP feature importance showed:
 1. Top 3 important features for Insufficient_Weight are : Weight, Height and Family_History_with_Overweight_Yes
 2. Top 3 important features for Normal_Weight are : Weight, Height and CAEC_Sometimes
 3. Top 3 important features for Obesity_Type_I are : Weight, Height and CAEC_Sometimes
@@ -214,6 +221,10 @@ The plot of SHAP feature importance for Obesity Type III class is presented as f
 5. Top 3 important features for Obesity_Type_III are : Weight, Height and Gender_Male
 6. Top 3 important features for Overweight_Level_I are : Weight, Height and Family_History_with_Overweight_Yes
 7. Top 3 important features for Overweight_Level_II are : Weight, Age and Family_History_with_Overweight_Yes
+
+The plot of SHAP feature importance for Obesity Type III class is presented as follows:
+
+![alt text](images/PyTorch_top15_class4.png)
 
 ### Models Summary
 
