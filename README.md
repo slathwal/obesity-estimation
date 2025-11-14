@@ -98,10 +98,50 @@ The overall plan to tackle the project is as follows:
 - Vinushiya Shanmugathasan: Experiment with Random Forest model (including SHAP analysis)
 
 ## Exploratory data analysis
+Clustering Summary (K-Prototypes)
+This project applies K-Prototypes to group individuals based on lifestyle behaviors. Although clustering is unsupervised, the groups show alignment with obesity categories.
+
+Cluster Insights 
+Cluster 0 — Active & Balanced
+Features: FAF (activity), NCP (meal count), Age
+Pattern: High activity, diverse weight outcomes
+Dominant class: Insufficient Weight
+Insight: Health-conscious and active.
+
+Cluster 1 — Moderate Activity, Overweight-Prone
+Features: NCP, Age, FAF
+Pattern: Slightly low activity, moderate lifestyle
+Dominant class: Overweight Level I
+Insights: Possible early-stage overweight,opportunity for preventive habits.
+
+Cluster 2 — Low Hydration, Obesity II
+Features: Age, CH₂O (water intake), FAF
+Pattern: Older group, low hydration + low activity
+Dominant class: Obesity Type II
+Insights: overweight; hydration and activity are factors.
+
+Cluster 3 — Inactive & Severely Obese
+Features: FAF (very low), NCP, Age
+Pattern: Lowest physical activity
+Dominant class: Obesity Type III
+Insights: High-risk group 
+
 
 ## Model Development and Evaluation
 
 ### Model 1
+- The experiment was conducted by splitting the dataset into training and test dataset, stratified. Logistic regression
+model was used. With accuracy of 88%, the following feature importance were found:
+1. Top 3 important features for Insufficient_Weight are : Weight, Height and Age
+2. Top 3 important features for Normal_Weight are : Weight, Height and CAEC_sometimes
+3. Top 3 important features for Obesity_Type_I are : Weight, Height and FCVC
+4. Top 3 important features for Obesity_Type_II are : Weight, Height and Gender_Male
+5. Top 3 important features for Obesity_Type_III are : Weight, FCVC and Gender_Male
+6. Top 3 important features for Overweight_Level_I are : Weight, Height and FCVC
+7. Top 3 important features for Overweight_Level_II are : Gender_Male, Age and FCVC
+
+Note that weight or height is common important feaures to all target classes except overweight_Level_II. This is an 
+insight that needs to further checked with other models to see if the same pattern is repeated.
 
 #### Model 2
 
