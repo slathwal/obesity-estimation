@@ -173,7 +173,12 @@ insight that needs to further checked with other models to see if the same patte
     - Weight, FCVC and age
 
 ### Model 3: XGBoost
-- The third model performed XGBoost, where the accuracy was around 95.27% with no sign of overfitting (by tightening the regularization). The SHAP feature importance showed:
+- The third model performed XGBoost, where the accuracy was around 95.27% with no sign of overfitting (by tightening the regularization).
+- The process of classification was import all the libraries required, read dataset, mapp the target, do train tes split, create pipeline that scaling the numerical features and do one hot encoding for categorical features, do hyperparameter tunning to find the best parameters value based on model's performance, train the final model with the best parameters value and calculate all the metrics. The
+
+![alt text](images/XGBoost_train_test_loss.png)
+
+- The SHAP feature importance showed:
 1. Top 3 important features for Insufficient_Weight are : Weight, Height and Age
 2. Top 3 important features for Normal_Weight are : Weight, Height and CH2O
 3. Top 3 important features for Obesity_Type_I are : Weight, Height and FCVC
