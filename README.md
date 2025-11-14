@@ -118,7 +118,7 @@ Cluster 2 — Low Hydration, Obesity II
 Features: Age, CH₂O (water intake), FAF
 Pattern: Older group, low hydration + low activity
 Dominant class: Obesity Type II
-Insights: overweight; hydration and activity are factores.
+Insights: overweight; hydration and activity are factors.
 
 Cluster 3 — Inactive & Severely Obese
 Features: FAF (very low), NCP, Age
