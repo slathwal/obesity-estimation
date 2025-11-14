@@ -90,7 +90,7 @@ The overall plan to tackle the project is as follows:
 - matplotlib: to create visualizations
 
 ## Task assignment
-- Eka Dwipayana: Starter code for exploratory data analysis and models, XGBoost experiments and model (including SHAP analysis)
+- Eka Dwipayana: Experiment with XGBoost and Neural Network models (including SHAP analysis)
 - Olalekan Kadri: Baseline logistic regression and experiments (including SHAP analysis)
 - Rameez Rosul: Unsupervised data analysis 
 - Shefali Lathwal: Exploratory data analysis
