@@ -174,7 +174,7 @@ insight that needs to further checked with other models to see if the same patte
 
 ### Model 3: XGBoost
 - The third model performed XGBoost, where the accuracy was around 95.27% with no sign of overfitting (by tightening the regularization).
-- The process of classification was import all the libraries required, read dataset, mapp the target, do train tes split, create pipeline that scaling the numerical features and do one hot encoding for categorical features, do hyperparameter tunning to find the best parameters value based on model's performance, train the final model with the best parameters value and calculate all the metrics. The
+- The process of classification was import all the libraries required, read dataset, mapp the target, do train tes split, create pipeline that scaling the numerical features and do one hot encoding for categorical features, do hyperparameter tunning to find the best parameters value based on model's performance, train the final model with the best parameters value and calculate all the metrics. The train versus testing loss is shown in the following image, where the decrease of train loss is followed by the decrease of testing loss. It means there is no sign of overfitting.
 
 ![alt text](images/XGBoost_train_test_loss.png)
 
@@ -186,6 +186,10 @@ insight that needs to further checked with other models to see if the same patte
 5. Top 3 important features for Obesity_Type_III are : Weight, Gender_Female and FCVC
 6. Top 3 important features for Overweight_Level_I are : Weight, Height and FCVC
 7. Top 3 important features for Overweight_Level_II are : Weight, Age, Height
+
+The plot of SHAP feature importance for Obesity Type III class is presented as follows:
+
+![alt text](images/XGBoost_shap_bar_class_4.png)
 
 ### Model 4: Neural Network with PyTorch
 - The third model carried out Nural Network with PyTorch, where the accuracy was around 95.27% with no sign of overfitting (by tightening the regularization with dropout rate optimization). The SHAP feature importance showed:
