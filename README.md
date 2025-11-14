@@ -98,6 +98,30 @@ The overall plan to tackle the project is as follows:
 - Vinushiya Shanmugathasan: Experiment with Random Forest model (including SHAP analysis)
 
 ## Exploratory data analysis
+
+### Dataset overview
+![images/eda/weight_class_distribution.png]
+- The dataset contains 1 target variable, NObeyesdad, and 16 feature variables
+- There are a total of 2111 data points.
+- 8 features are of type object, and 8 features are of type float
+- There are no missing values in any variable
+
+
+### Key observations
+- People with a family history of obesity are much more likely to be overweight or obese, especially in the higher obesity classes. Those without a family history are mostly normal weight or underweight.
+- People who usually walk instead of other means of transportation tend to have normal weight, and people who use automobiles tend to belong to higher weight categories.
+- How often someone drinks alcohol does not seem to be related to weight class.
+- People who "sometimes" eat between meals tend to belong to higher weight categories, and ones who report eating between meals "frequently", and "always" tend to have normal weight or insufficient weight. This might point to a bias in self-reported survey metrics where people who belong to higher weight categories, might tend to underestimate how often they eat between meals.
+- There are only 44 people who report smoking out of 2111 in the survey, which is a much lower percentage that would be expected based on public health surveys.
+- Height and weight have a correlation of 0.46. No other features have signification correlation with each other.
+
+### Possible biases in the data due to synthetic data generation
+- Classes Obesity_Type_II and Obesity_Type_III have very skewed gender distributions - There are only two female participants in Obesity_Type_II and only one male participant in Obesity_Type_III.
+- All age ranges are not equally represented in each class. For Obesity_Type_III, Insufficient_Weight, and Normal_Weight in particular, the age range is quite narrow, compared to the other four classes, indicating possible bias in the data.
+- For Obesity_Type_III, we also see two distinct groups with weight, which is different from all other classes and may indicate issues with synthetic data generation.
+- Most of the synthetic data generated belong to Obesity_Level_II and Obesity_Level_III classes, which is the possible reason that there is a gender skew, two distinct weight groups and two distinct age groups in these classes. Therefore, any interpretation on these two classes may not be reliable.
+
+### Unsupervised analysis
 Clustering Summary (K-Prototypes)
 This project applies K-Prototypes to group individuals based on lifestyle behaviors. Although clustering is unsupervised, the groups show alignment with obesity categories.
 
