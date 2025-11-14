@@ -169,8 +169,16 @@ insight that needs to further checked with other models to see if the same patte
 
 ### Model 2: Random Forest
 - The second experiment involved training a random forest model, where the accuracy was about 93%.
-- The top three features that highly impacted the model are the following:
+- The top three features that highly impacted the overall model are the following:
     - Weight, FCVC and age
+- These are the top three features which impacted each class:
+    - Class 0 - Insufficient Weight: weight, age, family history with overweight
+    - Class 1 - Normal Weight: weight, CAEC_sometimes, age
+    - Class 2 - Obesity Type I: weight, FCVC, height
+    - Class 3 - Obesity_Type_II: weight, age, gender_male
+    - Class 4 - Obesity_Type_III: weight, FCVC, gender_male
+    - Class 5 - Overweight_Level_I: weight, age, FCVC
+    - Class 6 - Overweight_Level_II: weight, age, height
 
 ### Model 3: XGBoost
 - The third model performed XGBoost, where the accuracy was around 95.27% with no sign of overfitting (by tightening the regularization).
