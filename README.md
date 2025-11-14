@@ -180,6 +180,8 @@ insight that needs to further checked with other models to see if the same patte
 
 - The result of model metrics is detailed with confussion matrix as follows:
 
+<img src="images/XGBoost_confusion_matrix.png" width="350">
+
  ![alt text](images/XGBoost_confusion_matrix.png)
   
 - The SHAP feature importance showed:
