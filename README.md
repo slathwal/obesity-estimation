@@ -233,8 +233,8 @@ The resume of all 4 models performance are detailed as follows:
  
 | Model | Accuracy | Precision | Recall | F1-Score|
  | --- | --- | --- | --- | --- |
- | Logistic Regression | 88 | 88 | 88 | 88 |
- | Random Forest | 93.14 | 94 | 93 | 93 |
+ | Logistic Regression | 88.00 | 88.00 | 88.00 | 88.00 |
+ | Random Forest | 93.14 | 94.00 | 93.00 | 93.00 |
  | XGBoost | 95.27 | 95.49 | 95.27 | 95.31 |
  | Neural Network | 95.27 | 95.13 | 95.15 | 95.09 |
  
