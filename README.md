@@ -153,7 +153,7 @@ Insights: High-risk group
 
 ## Model Development and Evaluation
 
-### Model 1
+### Model 1: Logistic Regression
 - The experiment was conducted by splitting the dataset into training and test dataset, stratified. Logistic regression
 model was used. With accuracy of 88%, the following feature importance were found:
 1. Top 3 important features for Insufficient_Weight are : Weight, Height and Age
@@ -167,14 +167,32 @@ model was used. With accuracy of 88%, the following feature importance were foun
 Note that weight or height is common important feaures to all target classes except overweight_Level_II. This is an 
 insight that needs to further checked with other models to see if the same pattern is repeated.
 
-### Model 2
+### Model 2: Random Forest
 - The second experiment involved training a random forest model, where the accuracy was about 93%.
 - The top three features that highly impacted the model are the following:
     - Weight, FCVC and age
 
-### Model 3
+### Model 3: XGBoost
+- The third model performed XGBoost, where the accuracy was around 94.84% with no sign of overfitting (by tightening the regularization). The SHAP feature importance showed:
+1. Top 3 important features for Insufficient_Weight are : Weight, Height and Age
+2. Top 3 important features for Normal_Weight are : Weight, Height and CH2O
+3. Top 3 important features for Obesity_Type_I are : Weight, Height and FCVC
+4. Top 3 important features for Obesity_Type_II are : Weight, Gender_Female and Age
+5. Top 3 important features for Obesity_Type_III are : Weight, Gender_Female and FCVC
+6. Top 3 important features for Overweight_Level_I are : Weight, Height and FCVC
+7. Top 3 important features for Overweight_Level_II are : Weight, Gender_Female, FCVC
 
-### Final model
+### Model 4: Neural Network with PyTorch
+- The third model carried out Nural Network with PyTorch, where the accuracy was around 95.27% with no sign of overfitting (by tightening the regularization with dropout rate optimization). The SHAP feature importance showed:
+1. Top 3 important features for Insufficient_Weight are : Weight, Height and CAEC_Sometimes
+2. Top 3 important features for Normal_Weight are : Weight, Height and CAEC_Sometimes
+3. Top 3 important features for Obesity_Type_I are : Weight, Height and FAVC_Yes
+4. Top 3 important features for Obesity_Type_II are : Weight, Height and Age
+5. Top 3 important features for Obesity_Type_III are : Weight, Height and Gender_Female
+6. Top 3 important features for Overweight_Level_I are : Weight, Height and Age
+7. Top 3 important features for Overweight_Level_II are : Weight, Age and Family_History_with_Overweight_Yes
+
+### Models Summary
 
 # Conclusions and Future Directions
 
