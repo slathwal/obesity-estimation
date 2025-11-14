@@ -180,7 +180,10 @@ insight that needs to further checked with other models to see if the same patte
 
 - The result of model metrics is detailed with confussion matrix as follows:
 
-<img src="images/XGBoost_confusion_matrix.png" width="350">
+<p align="center">
+  <img src="images/XGBoost_confusion_matrix.png" width="450">
+</p>
+
 
  ![alt text](images/XGBoost_confusion_matrix.png)
   
