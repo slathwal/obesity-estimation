@@ -181,7 +181,7 @@ insight that needs to further checked with other models to see if the same patte
 - The result of model metrics is detailed with confussion matrix as follows:
 
 <p align="center">
-  <img src="images/XGBoost_confusion_matrix.png" width="550">
+  <img src="images/XGBoost_confusion_matrix.png" width="750">
 </p>
 
 
