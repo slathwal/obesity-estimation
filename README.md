@@ -90,7 +90,7 @@ The overall plan to tackle the project is as follows:
 - matplotlib: to create visualizations
 
 ## Task assignment
-- Eka Dwipayana: Starter code for exploratory data analysis and models, XGBoost experiments and model (including SHAP analysis)
+- Eka Dwipayana: Experiment with XGBoost and Neural Network models (including SHAP analysis)
 - Olalekan Kadri: Baseline logistic regression and experiments (including SHAP analysis)
 - Rameez Rosul: Unsupervised data analysis 
 - Shefali Lathwal: Exploratory data analysis
@@ -99,9 +99,61 @@ The overall plan to tackle the project is as follows:
 
 ## Exploratory data analysis
 
+### Dataset overview
+- The dataset contains 1 target variable, NObeyesdad, and 16 feature variables
+- There are a total of 2111 data points.
+- 8 features are of type object, and 8 features are of type float
+- There are no missing values in any variable
+- The target category consists of seven different weight classes. The classes and number of participants in each class are shown below.
+![number of participants in each target category](images/eda/eda_weight_class_distribution_horizontal_bar.png)
+
+### Key observations
+- People with a family history of obesity are much more likely to be overweight or obese, especially in the higher obesity classes. Those without a family history are mostly normal weight or underweight.
+- People who usually walk instead of other means of transportation tend to have normal weight, and people who use automobiles tend to belong to higher weight categories.
+- How often someone drinks alcohol does not seem to be related to weight class.
+- People who "sometimes" eat between meals tend to belong to higher weight categories, and ones who report eating between meals "frequently", and "always" tend to have normal weight or insufficient weight. This might point to a bias in self-reported survey metrics where people who belong to higher weight categories, might tend to underestimate how often they eat between meals.
+- There are only 44 people who report smoking out of 2111 in the survey, which is a much lower percentage that would be expected based on public health surveys.
+- Height and weight have a correlation of 0.46. No other features have signification correlation with each other.
+
+### Possible biases in the data due to synthetic data generation
+- Classes Obesity_Type_II and Obesity_Type_III have very skewed gender distributions - There are only two female participants in Obesity_Type_II and only one male participant in Obesity_Type_III.
+- All age ranges are not equally represented in each class. For Obesity_Type_III, Insufficient_Weight, and Normal_Weight in particular, the age range is quite narrow, compared to the other four classes, indicating possible bias in the data.
+- For Obesity_Type_III, we also see two distinct groups with weight, which is different from all other classes and may indicate issues with synthetic data generation.
+- Most of the synthetic data generated belong to Obesity_Level_II and Obesity_Level_III classes, which is the possible reason that there is a gender skew, two distinct weight groups and two distinct age groups in these classes. Therefore, any interpretation on these two classes may not be reliable.
+
+### Unsupervised analysis
+Clustering Summary (K-Prototypes)
+This project applies K-Prototypes to group individuals based on lifestyle behaviors. Although clustering is unsupervised, the groups show alignment with obesity categories.
+
+Cluster Insights 
+Cluster 0 — Active & Balanced
+Features: FAF (activity), NCP (meal count), Age
+Pattern: High activity, diverse weight outcomes
+Dominant class: Insufficient Weight
+Insight: Health-conscious and active.
+
+Cluster 1 — Moderate Activity, Overweight-Prone
+Features: NCP, Age, FAF
+Pattern: Slightly low activity, moderate lifestyle
+Dominant class: Overweight Level I
+Insights: Possible early-stage overweight,opportunity for preventive habits.
+
+Cluster 2 — Low Hydration, Obesity II
+Features: Age, CH₂O (water intake), FAF
+Pattern: Older group, low hydration + low activity
+Dominant class: Obesity Type II
+Insights: overweight; hydration and activity are factors.
+
+Cluster 3 — Inactive & Severely Obese
+Features: FAF (very low), NCP, Age
+Pattern: Lowest physical activity
+Dominant class: Obesity Type III
+Insights: High-risk group 
+
+
 ## Model Development and Evaluation
 
-### Model 1
+### Model 1: Logistic Regression
 - The experiment was conducted by splitting the dataset into training and test dataset, stratified. Logistic regression
 model was used. With accuracy of 88%, the following feature importance were found:
 1. Top 3 important features for Insufficient_Weight are : Weight, Height and Age
@@ -115,11 +167,32 @@ model was used. With accuracy of 88%, the following feature importance were foun
 Note that weight or height is common important feaures to all target classes except overweight_Level_II. This is an 
 insight that needs to further checked with other models to see if the same pattern is repeated.
 
-#### Model 2
+### Model 2: Random Forest
+- The second experiment involved training a random forest model, where the accuracy was about 93%.
+- The top three features that highly impacted the model are the following:
+    - Weight, FCVC and age
 
-### Model 3
+### Model 3: XGBoost
+- The third model performed XGBoost, where the accuracy was around 94.84% with no sign of overfitting (by tightening the regularization). The SHAP feature importance showed:
+1. Top 3 important features for Insufficient_Weight are : Weight, Height and Age
+2. Top 3 important features for Normal_Weight are : Weight, Height and CH2O
+3. Top 3 important features for Obesity_Type_I are : Weight, Height and FCVC
+4. Top 3 important features for Obesity_Type_II are : Weight, Gender_Female and Age
+5. Top 3 important features for Obesity_Type_III are : Weight, Gender_Female and FCVC
+6. Top 3 important features for Overweight_Level_I are : Weight, Height and FCVC
+7. Top 3 important features for Overweight_Level_II are : Weight, Gender_Female, FCVC
 
-### Final model
+### Model 4: Neural Network with PyTorch
+- The third model carried out Nural Network with PyTorch, where the accuracy was around 95.27% with no sign of overfitting (by tightening the regularization with dropout rate optimization). The SHAP feature importance showed:
+1. Top 3 important features for Insufficient_Weight are : Weight, Height and CAEC_Sometimes
+2. Top 3 important features for Normal_Weight are : Weight, Height and CAEC_Sometimes
+3. Top 3 important features for Obesity_Type_I are : Weight, Height and FAVC_Yes
+4. Top 3 important features for Obesity_Type_II are : Weight, Height and Age
+5. Top 3 important features for Obesity_Type_III are : Weight, Height and Gender_Female
+6. Top 3 important features for Overweight_Level_I are : Weight, Height and Age
+7. Top 3 important features for Overweight_Level_II are : Weight, Age and Family_History_with_Overweight_Yes
+
+### Models Summary
 
 # Conclusions and Future Directions
 
