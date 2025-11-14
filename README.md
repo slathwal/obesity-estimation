@@ -227,6 +227,15 @@ The plot of SHAP feature importance for Obesity Type III class is presented as f
 ![alt text](images/PyTorch_top15_class4.png)
 
 ### Models Summary
+The resume of all 4 models are detailed as follows:
+
+| Model | Accuracy | Precision | Recall | F1-Score|
+ | --- | --- | --- | --- | --- |
+ | Logistic Regression | -- | -- | -- | -- |
+ | Random Forest | 93.14 | 94 | 93 | 93 |
+ | XGBoost | 95.27 | 95.49 | 95.27 | 95.31 |
+ | Neural Network | 95.27 | 95.13 | 95.15 | 95.09 |
+
 
 # Conclusions and Future Directions
 
