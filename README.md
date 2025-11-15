@@ -180,7 +180,7 @@ insight that needs to further checked with other models to see if the same patte
     - Class 5 - Overweight_Level_I: weight, age, FCVC
     - Class 6 - Overweight_Level_II: weight, age, height
 
-### Model 3: XGBoost
+### Model 3: [XGBoost](https://github.com/slathwal/obesity-estimation/blob/main/experiments/Obesity_Classification_with_XGBoost.ipynb)
 - The third model performed XGBoost, where the accuracy was around 95.27% with no sign of overfitting (by tightening the regularization).
 - The process of classification was import all the libraries required, read dataset, map the target, do train tes split, create pipeline that scaling the numerical features and do one hot encoding for categorical features, do hyperparameter tunning to find the best parameters value based on model's performance, train the final model with the best parameters value and calculate all the metrics. The train versus testing loss is shown in the following image, where the decrease of train loss is followed by the decrease of testing loss. It means there is no sign of overfitting.
 
