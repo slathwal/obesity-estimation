@@ -90,12 +90,12 @@ The overall plan to tackle the project is as follows:
 - matplotlib: to create visualizations
 
 ## Task assignment
-- Eka Dwipayana: Experiment with XGBoost and Neural Network models (including SHAP analysis)
-- Olalekan Kadri: Baseline logistic regression and experiments (including SHAP analysis)
-- Rameez Rosul: Unsupervised data analysis 
 - Shefali Lathwal: Exploratory data analysis
 - Suni Bek: Exploratory data analysis
+- Rameez Rosul: Unsupervised data analysis
+- Olalekan Kadri: Baseline logistic regression and experiments (including SHAP analysis)
 - Vinushiya Shanmugathasan: Experiment with Random Forest model (including SHAP analysis)
+- Eka Dwipayana: Experiment with XGBoost and Neural Network models (including SHAP analysis)
 
 ## [Exploratory data analysis](https://github.com/slathwal/obesity-estimation/blob/main/experiments/data_exploration_and_visualization.ipynb)
 
