@@ -3,7 +3,7 @@
 
 ## Members
 
-- [Eka Dwipayana]()
+- [Eka Dwipayana](https://www.linkedin.com/in/eka-dwipayana/)
 - [Olalekan Kadri]()
 - [Rameez Rosul]()
 - [Shefali Lathwal]()
