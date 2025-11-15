@@ -153,7 +153,7 @@ Insights: High-risk group
 
 ## Model Development and Evaluation
 
-### Model 1: Logistic Regression
+### Model 1: [Logistic Regression](https://github.com/slathwal/obesity-estimation/blob/main/experiments/Logistic_regression.ipynb)
 - The experiment was conducted by splitting the dataset into training and test dataset, stratified. Logistic regression
 model was used. With accuracy of 88%, the following feature importance were found:
 1. Top 3 important features for Insufficient_Weight are : Weight, Height and Age
