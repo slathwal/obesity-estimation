@@ -97,7 +97,7 @@ The overall plan to tackle the project is as follows:
 - Suni Bek: Exploratory data analysis
 - Vinushiya Shanmugathasan: Experiment with Random Forest model (including SHAP analysis)
 
-## Exploratory data analysis
+## [Exploratory data analysis](https://github.com/slathwal/obesity-estimation/blob/main/experiments/data_exploration_and_visualization.ipynb)
 
 ### Dataset overview
 - The dataset contains 1 target variable, NObeyesdad, and 16 feature variables
@@ -121,7 +121,7 @@ The overall plan to tackle the project is as follows:
 - For Obesity_Type_III, we also see two distinct groups with weight, which is different from all other classes and may indicate issues with synthetic data generation.
 - Most of the synthetic data generated belong to Obesity_Level_II and Obesity_Level_III classes, which is the possible reason that there is a gender skew, two distinct weight groups and two distinct age groups in these classes. Therefore, any interpretation on these two classes may not be reliable.
 
-### Unsupervised analysis
+### [Unsupervised analysis](https://github.com/slathwal/obesity-estimation/blob/main/experiments/Unsupervised%20Clustering_Final.ipynb)
 Clustering Summary (K-Prototypes)
 This project applies K-Prototypes to group individuals based on lifestyle behaviors. Although clustering is unsupervised, the groups show alignment with obesity categories.
 
