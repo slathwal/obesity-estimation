@@ -207,7 +207,7 @@ The plot of SHAP feature importance for Obesity Type III class is presented as f
 
 ![alt text](images/XGBoost_shap_bar_class_4.png)
 
-### Model 4: Neural Network with PyTorch
+### Model 4: [Neural Network with PyTorch](https://github.com/slathwal/obesity-estimation/blob/main/experiments/Obesity_Classification_with_PyTorch.ipynb)
 - The third model carried out Nural Network with PyTorch, where the accuracy was around 95.27% with no sign of overfitting (by tightening the regularization with dropout rate optimization).
 - The process of classification was import all the libraries required, read dataset, map the target, do train tes split, create pipeline that scaling the numerical features and do one hot encoding for categorical features, create PyTorch dataloader, create neural network architecture, assign optuna for hyperparameter tunning to find the best parameters value based on model's performance, train the final model with the best parameters value and calculate all the metrics. The calculation of all metrics through all classes is demonstrated bellow:
 
