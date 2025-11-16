@@ -6,7 +6,7 @@
 - [Eka Dwipayana](https://www.linkedin.com/in/eka-dwipayana/)
 - [Olalekan Kadri]()
 - [Rameez Rosul]()
-- [Shefali Lathwal]()
+- [Shefali Lathwal](www.linkedin.com/in/shefali-lathwal)
 - [Suni Bek](https://github.com/sunibek)
 - [Vinushiya Shanmugathasan]()
 
@@ -291,7 +291,7 @@ The resume of all 4 models performance are detailed as follows:
 | [Eka Dwipayana Video](https://drive.google.com/file/d/1D6drYN_VszITozfp8FWLw_02lhuTiECW/view?usp=sharing) |
 | [Olalekan Kadri Video](https://drive.google.com/file/d/1JeecngIx4_JM-vthobhPnIUwQLG9YjfW/view?usp=sharing) |
 | [Rameez Rosul Video](https://drive.google.com/file/d/1PuevQ25L0jKO7Kzo0ty44zF79Y9gxwNQ/view?usp=sharing) |
-| [Shefali Lathwal Video](#) |
+| [Shefali Lathwal Video](https://youtu.be/2hHLRfJMA8E) |
 | [Suni Bek Video](https://drive.google.com/file/d/1B0kqVVtUpVRx3XYEIl_wtFfS-5cJAi3R/view?usp=drive_link) |
 | [Vinushiya Shanmugathasan Video](#) |
 
