@@ -252,7 +252,7 @@ The resume of all 4 models performance are detailed as follows:
 
 # Team Videos
 1. [Rameez Rosul Video](https://drive.google.com/file/d/1PuevQ25L0jKO7Kzo0ty44zF79Y9gxwNQ/view?usp=sharing)
-2. hja
+2. [Olalekan Kadri](https://drive.google.com/file/d/1JeecngIx4_JM-vthobhPnIUwQLG9YjfW/view?usp=sharing)
 3. hja
 4. jha
 5. jak;
