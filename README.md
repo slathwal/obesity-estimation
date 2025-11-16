@@ -252,6 +252,15 @@ The plot of SHAP feature importance for Obesity Type III class is presented as f
 
 ![alt text](images/PyTorch_top15_class4.png)
 
+Legend note:
+1. Class 0 is Insufficient Weight
+2. Class 1 is Normal Weight
+3. Class 2 is Obesity Type I
+4. Class 3 is Obesity Type II
+5. Class 4 is Obesity Type III
+6. Class 5 is Overweight Level I
+7. Class 6 is Overweight Level II
+
 ### Models Summary
 The resume of all 4 models performance are detailed as follows:
 
