@@ -251,8 +251,12 @@ The resume of all 4 models performance are detailed as follows:
 # Conclusions and Future Directions
 
 # Team Videos
-Rameez Rosul Video:
-https://drive.google.com/file/d/1PuevQ25L0jKO7Kzo0ty44zF79Y9gxwNQ/view?usp=sharing
+1. [Rameez Rosul Video](https://drive.google.com/file/d/1PuevQ25L0jKO7Kzo0ty44zF79Y9gxwNQ/view?usp=sharing)
+2. hja
+3. hja
+4. jha
+5. jak;
+6. jka
 
 # References
 - [Dataset](https://archive.ics.uci.edu/dataset/544/estimation+of+obesity+levels+based+on+eating+habits+and+physical+condition) has been sourced from UC Irvine Machine Learning Repository
