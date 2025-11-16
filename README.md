@@ -7,11 +7,23 @@
 - [Olalekan Kadri]()
 - [Rameez Rosul]()
 - [Shefali Lathwal]()
-- [Suni Bek]()
+- [Suni Bek](https://github.com/sunibek)
 - [Vinushiya Shanmugathasan]()
 
 # Contents
-<!-- We will add a table of contents here -->
+- [Overview](#overview)  
+- [Business Objective](#business-objective)  
+- [Dataset Details](#dataset-details)  
+- [Potential Risks and Uncertainty](#potential-risks-and-uncertainty)  
+- [Methodology](#methodology)  
+- [Git Structure](#git-structure)  
+- [Technical Stack](#technical-stack)  
+- [Task Assignment](#task-assignment)  
+- [Exploratory Data Analysis](#exploratory-data-analysis)  
+- [Model Development and Evaluation](#model-development-and-evaluation)  
+- [Conclusions and Future Directions](#conclusions-and-future-directions)  
+- [Team Videos](#team-videos)
+- [References](#references)
 
 # Overview
 We have access to a dataset of 2111 individuals that records their obesity Level along with 17 attributes related with eating habits, physical condition, and demographics.
@@ -249,14 +261,24 @@ The resume of all 4 models performance are detailed as follows:
 </div>
 
 # Conclusions and Future Directions
+- Eating (and water-drinking) habits occur most frequently as the key factors.  
+- Education resources and funding should be dedicated to nutritional programs and improving access to healthier food options.  
+-Promote water intake over soda, sweetened drinks, and alcohol\
+-Increase access to fruits and vegetables\
+-Decrease access to high-calorie, low-nutrient foods  
+- We observed biases in the data likely due to synthetic oversampling. Therefore, WHO should allocate more resources to collecting more representative data from the general population.
+
 
 # Team Videos
-1. [Rameez Rosul Video](https://drive.google.com/file/d/1PuevQ25L0jKO7Kzo0ty44zF79Y9gxwNQ/view?usp=sharing)
-2. [Olalekan Kadri Video](https://drive.google.com/file/d/1JeecngIx4_JM-vthobhPnIUwQLG9YjfW/view?usp=sharing)
-3. hja
-4. jha
-5. jak;
-6. jka
+
+| Video Link |
+|---|
+| [Eka Dwipayana Video](#) |
+| [Olalekan Kadri Video](https://drive.google.com/file/d/1JeecngIx4_JM-vthobhPnIUwQLG9YjfW/view?usp=sharing) |
+| [Rameez Rosul Video](https://drive.google.com/file/d/1PuevQ25L0jKO7Kzo0ty44zF79Y9gxwNQ/view?usp=sharing) |
+| [Shefali Lathwal Video](#) |
+| [Suni Bek Video](https://drive.google.com/file/d/1B0kqVVtUpVRx3XYEIl_wtFfS-5cJAi3R/view?usp=drive_link) |
+| [Vinushiya Shanmugathasan Video](#) |
 
 # References
 - [Dataset](https://archive.ics.uci.edu/dataset/544/estimation+of+obesity+levels+based+on+eating+habits+and+physical+condition) has been sourced from UC Irvine Machine Learning Repository
