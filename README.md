@@ -176,6 +176,12 @@ model was used. With accuracy of 88%, the following feature importance were foun
 6. Top 3 important features for Overweight_Level_I are : Weight, Height and FCVC
 7. Top 3 important features for Overweight_Level_II are : Gender_Male, Age and FCVC
 
+The SHAP feature important plot is shown as follows:
+
+<p align="center">
+  <img src="images/model1_shap_global_summary.png" width="750">
+</p>
+
 Note that weight or height is common important feaures to all target classes except overweight_Level_II. This is an 
 insight that needs to further checked with other models to see if the same pattern is repeated.
 
