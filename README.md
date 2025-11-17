@@ -293,7 +293,7 @@ The resume of all 4 models performance are detailed as follows:
 | [Rameez Rosul Video](https://drive.google.com/file/d/1PuevQ25L0jKO7Kzo0ty44zF79Y9gxwNQ/view?usp=sharing) |
 | [Shefali Lathwal Video](https://youtu.be/2hHLRfJMA8E) |
 | [Suni Bek Video](https://drive.google.com/file/d/1B0kqVVtUpVRx3XYEIl_wtFfS-5cJAi3R/view?usp=drive_link) |
-| [Vinushiya Shanmugathasan Video](#) |
+| [Vinushiya Shanmugathasan Video](https://drive.google.com/file/d/1aNfMu4t_VJVs0RaEfjyOVDxoPeVLVOs2/view?usp=sharing) |
 
 # References
 - [Dataset](https://archive.ics.uci.edu/dataset/544/estimation+of+obesity+levels+based+on+eating+habits+and+physical+condition) has been sourced from UC Irvine Machine Learning Repository
