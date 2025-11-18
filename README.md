@@ -6,7 +6,7 @@
 - [Eka Dwipayana](https://www.linkedin.com/in/eka-dwipayana/)
 - [Olalekan Kadri]()
 - [Rameez Rosul]()
-- [Shefali Lathwal](www.linkedin.com/in/shefali-lathwal)
+- [Shefali Lathwal](https://www.linkedin.com/in/shefali-lathwal/)
 - [Suni Bek](https://github.com/sunibek)
 - [Vinushiya Shanmugathasan]()
 
